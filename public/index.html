@@ -4,20 +4,29 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="/static/stylesheets/main.css" />
+		<link class="jsbin" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+		<link class="jsbin" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<script class="jsbin" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<meta charset=utf-8 />
 		<title>Feature Comparison of Policy and Procedure Management Software</title>
 		<style type="text/css">
+<!--[Sticky Table if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  		article, aside, figure, footer, header, hgroup, 
+  		menu, nav, section { display: block; }
+  		th { background-color: gray; color: white; }
+  		table.sticky { position: fixed; top: 0; }
 
 		html { background-color: #6a93d8; }
 
 		body { margin: auto; padding: 0; }
 		  
-		table { border: 0; margin-left: auto; margin-right: auto; margin-top: 63px; width: 900px; }
+		/*table { border: 0; margin-left: auto; margin-right: auto; margin-top: 63px; width: 900px; }*/
 
-		div.header { background-color: #133672; color: white; position: fixed; top: 0; right: 0; width: 100%;
-				text-align: center; }
+		div.header { background-color: #133672; color: white; width: 100%; text-align: center; padding: 20px 0;}
 				
-		div.tableheadwrapper { color: #133672; font-weight: bold; position: fixed; top: 160px; right: 0; width: 100%;
-				text-align: center; }
+		div.tableheadwrapper { color: #133672; font-weight: bold; position: fixed; top: 160px; right: 0; width: 100%; text-align: center; }
 
 		div.tablehead { width: 775px; text-align: center; margin-left: auto; margin-right: auto; 
 		padding-left: 125px;}
@@ -30,825 +39,55 @@
 		-o-transform: rotate(-90deg);
 		}
 
+		th { width: 10%; }
+
 		td { text-align: center; padding: 5px; background-color: #ececec; width: 10%; }
 
 		tr.row1 { color: #133672; height: 175px; }
 
-		td.category { background-color: #3965b0; line-height: 2.5; font-size: 1.2em; color: #FFFFFF; }
+		td.category { background-color: #3965b0; line-height: 2; font-size: 1.2em; color: #FFFFFF; }
+
+		.table tbody tr:hover td.category { background-color: #3965b0; line-height: 2; font-size: 1.2em; color: #FFFFFF; }
 
 		td.features { width: 200px; text-align: left; padding-left: 15px; font-size: 1.1em; color: #133672; }
 
-		#solid { background-color: #87A5D8; }
+		#feats {width: 200px; }
+
+		.table tbody tr td.solid { background-color: #87A5D8; }
 
 		td.copyright { padding: 20px; font-size: 1.1em; font-style: italic; line-height: 1.5em; }
-		  
+
 		</style>
 	</head>
 	<body>
 		<div class="header">
 			<h2>Feature Comparison &ndash; Policy and Procedure Management Software</h2>
 		</div>
-		<div class="tableheadwrapper">
-			<div class="tablehead">
-				<div>HospitalPortal.net</div>
-				<div>Medworxx</div>
-				<div>Compliance360</div>
-				<div>MCN Healthcare</div>
-				<div>Indidge Systems</div>
-				<div>ComplianceBridge</div>
-				<div>PolicyMedical</div>
-				<div>PolicyStat</div>
-				<div>PolicyTech</div>
-			</div>
-		</div>
-		<table>
-			<tr class="row1">
-				<td><h2>Features</h2>
-					Blue = Has feature<br/>White = Does NOT have feature</td>
-				<td colspan="9"></td>
-			</tr>
-
-			<tr><td class="category" colspan="10">Training</td></tr>
-			<tr><td class="category" colspan="10">Integrations</td></tr>
-			<tr>
-				<td class="features">MS Excel Integration</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">LDAP/AD real-time authentication </td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Schedule automatic import of groups</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">LDAP/AD automatic retrieval of groups</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Schedule automatic import of group members</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">LDAP/AD automatic retrieval of members</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Schedule automatic import of users</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">LDAP/AD automatic retrieval of users</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr><td class="category" colspan="10">Automation</td></tr>
-			<tr>
-				<td class="features">Review and Approval Workflow</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc" id="solid"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>z
-
-
-			<tr>
-				<td class="features">Automate document approval process</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>			<tr>
-				<td class="features">Automate document approval process</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Reminders</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc" id="solid"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Escalation Emails</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Instant text messages to groups' members</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr><td class="category" colspan="10">Access</td></tr>
-			<tr>
-				<td class="features">Web Based</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge" id="solid"></td>
-				<td class="mcn-hc" id="solid"></td>
-				<td class="comp360" id="solid"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr><td class="category" colspan="10">For End-Users</td></tr>
-			<tr>
-				<td class="features">Search and Filter</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge" id="solid"></td>
-				<td class="mcn-hc" id="solid"></td>
-				<td class="comp360" id="solid"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Search document content -- including pdf and Word® docs</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">User managed "Favorite" documents</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge" id="solid"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr><td class="category" colspan="10">For Authors/Editors</td></tr>
-
-			<tr>
-				<td class="features">Edit documents in browser (if .doc)</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Edit documents in browser without plugins (if .doc)</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge">?</td>
-				<td class="indidge">?</td>
-				<td class="mcn-hc">?</td>
-				<td class="comp360">?</td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Feedback/Commenting</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Work Offline</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge"></td>
-				<td class="indidge" id="solid"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Auto-reminders for "no action taken"</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Publication in the future capability</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr><td class="category" colspan="10">For Managers</td></tr>
-			<tr>
-				<td class="features">Custom report generation</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Export report data to Excel®</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Print reports</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Automatically send reports via email link</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr><td class="category" colspan="10">For Site/System Administrators / User & Content Control</td></tr>
-			<tr>
-				<td class="features">Standardized Authoring</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Create/publish reference documents</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Create/publish advisory documents</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Create/publish template documents</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc" id="solid"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr><td class="category" colspan="10">For Compliance</td></tr>
-			<tr>
-				<td class="features">Required Readers</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Versioning</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Archiving</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc" id="solid"></td>
-				<td class="comp360" id="solid"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Archive documents to history</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Automatic test/questionnaire scoring</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Change History/Archive Retrieval</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Report/Auditing</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Link Regulatory Standards</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr><td class="category" colspan="10">For IT/IS</td></tr>
-			<tr>
-				<td class="features">No hardware/software purchase</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Scalability</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Multiple location backup</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr><td class="category" colspan="10">Total System Value</td></tr>
-
-
-
-
-
-
-
-
-
-
-
-			<tr>
-				<td class="features">Hyperlinks</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Categorization</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-
-			<tr>
-				<td class="features">Standardization</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-
-
-
+		<table id="example" class="table table-bordered">
+		    <thead>
+			    <tr>
+					<th class="features"><div id="feats">Features</div></th>
+					<th>PolicyTech</th>
+					<th>PolicyStat</th>
+					<th>PolicyMedical</th>
+					<th>ComplianceBridge</th>
+					<th>Indidge Systems</th>
+					<th>MCN Healthcare</th>
+					<th>Compliance360</th>
+					<th>MedWorxx</th>
+					<th>HospitalPortal.net</th>
+			    </tr>
+		    </thead>
+<tbody>
+			<tr><td class="category" colspan="10">Training & Support</td></tr>
 			<tr>
 				<td class="features">Training</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
 				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
+				<td class="compBridge solid"></td>
 				<td class="indidge"></td>
 				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Collaboration</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Track Comprehension</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-
-			<tr>
-				<td class="features">Import</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Bulk Edit</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">User Account</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Permission Levels (Restrictions)</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Permission Levels (Restrictions)</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Encryption</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Electronic Signature/Validation</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge" id="solid"></td>
-				<td class="mcn-hc" id="solid"></td>
-				<td class="comp360" id="solid"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Easy Sharing</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Online support</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge" id="solid"></td>
-				<td class="mcn-hc" id="solid"></td>
-				<td class="comp360" id="solid"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Healthcare Focused</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc" id="solid"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">User-friendly Interface</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Handles any document format</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Usage reports</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Create Quizzes</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc" id="solid"></td>
 				<td class="comp360"></td>
 				<td class="medworxx"></td>
 				<td class="hosPortal"></td>
@@ -866,269 +105,286 @@
 				<td class="hosPortal"></td>
 			</tr>
 			<tr>
-				<td class="features">Send Staff Surveys</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360" id="solid"></td>
-				<td class="medworxx"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Unlimited Documents</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
 				<td class="features">Online training</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
 				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
+				<td class="compBridge solid"></td>
 				<td class="indidge"></td>
-				<td class="mcn-hc" id="solid"></td>
+				<td class="mcn-hc solid"></td>
 				<td class="comp360"></td>
 				<td class="medworxx"></td>
-				<td class="hosPortal" id="solid"></td>
+				<td class="hosPortal solid"></td>
 			</tr>
 			<tr>
 				<td class="features">On-Site Training (optional)</td>
 				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
+				<td class="policystat solid"></td>
 				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
+				<td class="compBridge solid"></td>
 				<td class="indidge"></td>
 				<td class="mcn-hc"></td>
 				<td class="comp360"></td>
 				<td class="medworxx"></td>
 				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Online support</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge solid"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360 solid"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
 			</tr>
 			<tr>
 				<td class="features">Phone Support</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
 				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
+				<td class="compBridge solid"></td>
 				<td class="indidge"></td>
 				<td class="mcn-hc"></td>
 				<td class="comp360"></td>
 				<td class="medworxx"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Custom Branding of website</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">Multiple, lockable sections</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">User-edited email templates</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Audit Log &endash; exporting, archiving</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Managed reminders and notifications</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">User-built organization structure</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
-			</tr>
-			<tr>
-				<td class="features">User-settable enforced password standards</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
+				<td class="hosPortal solid"></td>
 			</tr>
 
+			<tr><td class="category" colspan="10">Integrations</td></tr>
 			<tr>
-				<td class="features">Unlimited user-defined data-fields for use in documents, emails, and reports</td>
-				<td class="policytech"></td>
-				<td class="policystat"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
+				<td class="features">Handles any document format</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
 				<td class="indidge"></td>
 				<td class="mcn-hc"></td>
 				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal solid"></td>
 			</tr>
 			<tr>
-				<td class="features">Create and use template documents</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
+				<td class="features">Import</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
 				<td class="indidge"></td>
 				<td class="mcn-hc"></td>
 				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
+				<td class="medworxx solid"></td>
 				<td class="hosPortal"></td>
-			</tr>
-
-			<tr>
-				<td class="features">Categorize documents</td>
-				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
 			</tr>
 			<tr>
 				<td class="features">Import any electronic documents</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
 				<td class="indidge"></td>
 				<td class="mcn-hc"></td>
 				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal" id="solid"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
 			</tr>
 			<tr>
-				<td class="features">Connect linked documents</td>
+				<td class="features">MS Excel Integration</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">LDAP/AD real-time authentication </td>
 				<td class="policytech"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
 				<td class="indidge"></td>
 				<td class="mcn-hc"></td>
 				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
+				<td class="medworxx solid"></td>
 				<td class="hosPortal"></td>
 			</tr>
 			<tr>
-				<td class="features">Lock documents</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Preview (print) documents</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed" id="solid"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-			<tr>
-				<td class="features">Automatic (&amp; override) version control</td>
-				<td class="policytech" id="solid"></td>
-				<td class="policystat" id="solid"></td>
-				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
-				<td class="indidge"></td>
-				<td class="mcn-hc"></td>
-				<td class="comp360"></td>
-				<td class="medworxx" id="solid"></td>
-				<td class="hosPortal"></td>
-			</tr>
-
-
-
-
-			<tr>
-				<td class="features">Include dynamic user data in emails &amp; texting</td>
+				<td class="features">Schedule automatic import of groups</td>
 				<td class="policytech"></td>
-				<td class="policystat"></td>
+				<td class="policystat solid"></td>
 				<td class="policymed"></td>
-				<td class="compBridge" id="solid"></td>
+				<td class="compBridge solid"></td>
 				<td class="indidge"></td>
 				<td class="mcn-hc"></td>
 				<td class="comp360"></td>
 				<td class="medworxx"></td>
 				<td class="hosPortal"></td>
 			</tr>
+			<tr>
+				<td class="features">LDAP/AD automatic retrieval of groups</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Schedule automatic import of group members</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">LDAP/AD automatic retrieval of members</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Schedule automatic import of users</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">LDAP/AD automatic retrieval of users</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr><td class="category" colspan="10">Automation</td></tr>
+			<tr>
+				<td class="features">Review and Approval Workflow</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Automatic (&amp; override) version control</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+
+			<tr>
+				<td class="features">Managed reminders and notifications</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
 
 
-
-
-
-
+			<tr>
+				<td class="features">Automate document approval process</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>			<tr>
+				<td class="features">Automate document approval process</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Reminders</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Escalation Emails</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Instant text messages to groups' members</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
 
 			<tr>
 				<td class="features">RSS feeds for policies</td>
@@ -1143,6 +399,755 @@
 				<td class="hosPortal"></td>
 			</tr>
 
+
+			<tr><td class="category" colspan="10">User Access</td></tr>
+			<tr>
+				<td class="features">Web Based</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge solid"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360 solid"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr><td class="category" colspan="10">For End-Users</td></tr>
+			<tr>
+				<td class="features">User-friendly Interface</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Search and Filter</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge solid"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360 solid"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Search document content -- including pdf and Word® docs</td>
+				<td class="policytech solid"></td>
+				<td class="policystat"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">User managed "Favorite" documents</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge solid"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Preview (print) documents</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr><td class="category" colspan="10">Authoring & Editing</td></tr>
+			<tr>
+				<td class="features">Create and use template documents</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Collaboration</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Edit documents in browser (if .doc)</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Edit documents in browser without plugins (if .doc)</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge">?</td>
+				<td class="indidge">?</td>
+				<td class="mcn-hc">?</td>
+				<td class="comp360">?</td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Feedback/Commenting</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Work Offline</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge"></td>
+				<td class="indidge solid"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Auto-reminders for "no action taken"</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Publication in the future capability</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Lock documents</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr><td class="category" colspan="10">Reporting</td></tr>
+			<tr>
+				<td class="features">Custom report generation</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Export report data to Excel®</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Print reports</td>
+				<td class="policytech solid"></td>
+				<td class="policystat"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Automatically send reports via email link</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Usage reports</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr><td class="category" colspan="10">Control over Users and Content</td></tr>
+			<tr>
+				<td class="features">Custom Branding of website</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Standardized Authoring</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+
+			<tr>
+				<td class="features">Categorization</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+
+			<tr>
+				<td class="features">Standardization</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Create/publish reference documents</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Create/publish advisory documents</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Create/publish template documents</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+
+			<tr>
+				<td class="features">Bulk Edit</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">User Account</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Permission Levels (Restrictions)</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Permission Levels (Restrictions)</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">User-edited email templates</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">User-built organization structure</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">User-settable enforced password standards</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+
+			<tr>
+				<td class="features">Unlimited user-defined data-fields for use in documents, emails, and reports</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+
+			<tr><td class="category" colspan="10">Compliance</td></tr>
+			<tr>
+				<td class="features">Required Readers</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Versioning</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Archiving</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360 solid"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Archive documents to history</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Automatic test/questionnaire scoring</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Change History/Archive Retrieval</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Report/Auditing</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Link Regulatory Standards</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Track Comprehension</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Electronic Signature/Validation</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge solid"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360 solid"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Create Quizzes</td>
+				<td class="policytech solid"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+
+			<tr>
+				<td class="features">Send Staff Surveys</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360 solid"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr><td class="category" colspan="10">For IT/IS</td></tr>
+			<tr>
+				<td class="features">No hardware/software purchase</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Scalability</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr>
+				<td class="features">Multiple location backup</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Encryption</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Unlimited Documents</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+			<tr><td class="category" colspan="10">Linking</td></tr>
+			<tr>
+				<td class="features">Hyperlinks</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Easy Sharing</td>
+				<td class="policytech solid"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+			<tr>
+				<td class="features">Connect linked documents</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+			<tr>
+				<td class="features">Healthcare Focused</td>
+				<td class="policytech"></td>
+				<td class="policystat solid"></td>
+				<td class="policymed solid"></td>
+				<td class="compBridge"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc solid"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal solid"></td>
+			</tr>
+
+
+			<tr>
+				<td class="features">Multiple, lockable sections</td>
+				<td class="policytech solid"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+
+			<tr>
+				<td class="features">Audit Log &endash; exporting, archiving</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx solid"></td>
+				<td class="hosPortal"></td>
+			</tr>
+
+
+			<tr>
+				<td class="features">Include dynamic user data in emails &amp; texting</td>
+				<td class="policytech"></td>
+				<td class="policystat"></td>
+				<td class="policymed"></td>
+				<td class="compBridge solid"></td>
+				<td class="indidge"></td>
+				<td class="mcn-hc"></td>
+				<td class="comp360"></td>
+				<td class="medworxx"></td>
+				<td class="hosPortal"></td>
+			</tr>
+
+
+
+
+
+
+
+
+
 			<tr>
 				<td class="copyright" colspan="10">
 					Copyright 2012 policy-and-procedure-management.com.
@@ -1154,8 +1159,35 @@
 					inaccurate, please notify us.
 				</td>
 			</tr>
+		</tbody>
 		</table>
 	</body>
 </html>
 
 
+<script type="text/javascript">
+	var $window = $(window);
+	var $table = $('table#example');
+
+	var $tableClone = $table.clone();
+	$('tbody', $tableClone).remove();
+	$tableClone.addClass('sticky');
+	$('th', $tableClone).css({width: '10%'});
+	$('body').append($tableClone);
+
+	// Stick to the top of the screen during scroll
+	var topPos = $table.offset().top;
+
+	function scrollHandler() {
+	    var windowTop = $window.scrollTop();
+	    if (windowTop > topPos) {
+	        if (!$tableClone.is(':visible')) {
+	            $tableClone.show();
+	        }
+	    } else {
+	        $tableClone.hide();
+	    }
+	}
+	$window.scroll(scrollHandler);
+	scrollHandler();
+</script>
